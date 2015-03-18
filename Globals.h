@@ -17,4 +17,10 @@ enum update_status
 #define SCREEN_WIDTH 1024
 #define SCREEN_HEIGHT 768
 #define FULLSCREEN 0
+#define TITLE "Bomberman"
+#define BORDERLESS 0
+#define RESIZABLE 0
+#define FULLSCREEN_DESKTOP 0
+
+
 

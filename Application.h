@@ -4,6 +4,7 @@
 #include "Globals.h"
 #include "Module.h"
 #include "Dummy.h"
+#include "Render.h"
 #include "ModuleWindow.h"
 
 class Application
@@ -24,3 +25,4 @@ private:
 
 	void AddModule(Module* mod);
 };
+
