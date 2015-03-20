@@ -14,13 +14,10 @@ enum update_status
 };
 
 // Configuration -----------
-#define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 768
-#define FULLSCREEN 0
-#define TITLE "Bomberman"
-#define BORDERLESS 0
-#define RESIZABLE 0
-#define FULLSCREEN_DESKTOP 0
-
-
-
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
+#define FULLSCREEN false
+#define RESIZABLE false
+#define VSYNC true
+#define TITLE "Super Awesome Game"
+#define SPRITE_FILE "sprites.png"

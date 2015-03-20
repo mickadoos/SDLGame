@@ -33,7 +33,13 @@
     <ClInclude Include="ModuleWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Render.h">
+    <ClInclude Include="ModuleRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleTextures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,7 +56,13 @@
     <ClCompile Include="Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Render.cpp">
+    <ClCompile Include="ModuleRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleTextures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleInput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

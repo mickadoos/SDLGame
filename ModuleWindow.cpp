@@ -2,7 +2,7 @@
 #include "Application.h"
 #include "ModuleWindow.h"
 
-ModuleWindow::ModuleWindow() : Module()
+ModuleWindow::ModuleWindow(Application* app) : Module(app)
 {
 	window = NULL;
 	screen_surface = NULL;
@@ -36,19 +36,9 @@ bool ModuleWindow::Init()
 			flags |= SDL_WINDOW_FULLSCREEN;
 		}
 
-		if (BORDERLESS == true)
-		{
-			flags |= SDL_WINDOW_BORDERLESS;
-		}
-
-		if (RESIZABLE == true)
+		if(RESIZABLE == true)
 		{
 			flags |= SDL_WINDOW_RESIZABLE;
-		}
-
-		if (FULLSCREEN_DESKTOP == true)
-		{
-			flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
 		}
 
 		// TODO: SDL_WINDOW_BORDERLESS, SDL_WINDOW_RESIZABLE,  SDL_WINDOW_FULLSCREEN_DESKTOP

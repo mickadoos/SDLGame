@@ -3,13 +3,23 @@
 
 Application::Application()
 {
-	ModuleDummy* pDummy = new ModuleDummy();
-	ModuleWindow* pWindow = new ModuleWindow();
-	ModuleRender* pRender = new ModuleRender();
+	renderer = new ModuleRender(this);
+	window = new ModuleWindow(this);
+	textures = new ModuleTextures(this);
+	input = new ModuleInput(this);
 
-	AddModule(pDummy);
-	AddModule(pWindow);
-	AddModule(pRender);
+	AddModule(window);
+	AddModule(renderer);
+	AddModule(textures);
+	AddModule(input);
+}
+
+Application::~Application()
+{
+	delete renderer;
+	delete window;
+	delete textures;
+	delete input;
 }
 
 bool Application::Init()
@@ -37,7 +47,6 @@ update_status Application::Update()
 		item = item->next;
 	}
 
-	// TODO: fer que torni false si algun Init torna false
 	return ret;
 }
 
